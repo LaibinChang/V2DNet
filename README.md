@@ -42,4 +42,4 @@ bash scripts/test.sh
 ---
 ## 📝 Notes
 * ❓ If you have any questions, please feel free to contact us at **[changlb666@whu.edu.cn](mailto:changlb666@whu.edu.cn)**.
-* 🌐 I am open to collaboration and welcome inquiries from anyone interested in my research. Please find us at **[https://laibinchang.github.io/](https://laibinchang.github.io/)**.
+* 🌐 I am open to collaboration and welcome inquiries from anyone interested in my research. Please visit **[https://laibinchang.github.io/](https://laibinchang.github.io/)** for our latest updates.
