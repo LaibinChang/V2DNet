@@ -35,7 +35,7 @@ bash scripts/test.sh
 
 ## 📖 Paper Info & Status
 > **Title**: From Visibility to Detection: Saliency-Guided Underwater Image Restoration with Hierarchical Dual-Branch Refinement  
-> **Authors**: Laibin Chang, Yuxin Wang, Kui Jiang, Shaodong Wang, Bo Du  
+> **Authors**: Laibin Chang, Yunke Wang, Kui Jiang, Shaodong Wang, Bo Du  
 > **Status**: Under Review  
 > **Code**: The code will be released after the paper is accepted.
 
