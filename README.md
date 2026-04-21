@@ -1,7 +1,7 @@
-# From Visibility to Detection: Saliency-Guided Underwater Image Restoration with Hierarchical Dual-Branch Refinement
+# UniV2D: Bridging Visual Restoration and Semantic Perception for Underwater Salient Object Detection
 
 ## 📌 Introduction
-Underwater salient object detection (USOD) plays a vital role in many marine vision tasks, yet remains challenging due to severe visual degradation and complex scene variability. The quality degradation of raw underwater images (caused by selective absorption and medium scattering) makes it challenging to perform object detection directly. One conceivable approach involves first removing visual disturbances through underwater image enhancement, followed by salient object detection. However, such a sequential design separates low-level restoration from high-level perception, leading to semantic inconsistency that makes the restoration results unfavorable for detection and may even introduce additional noise. To address this, we propose V2DNet, a unified network that jointly optimizes visual restoration and salient object detection. Unlike physics-guided approaches that rely on handcrafted priors and iterative optimization, V2DNet adopts a semantic-driven learning paradigm, wherein high-level saliency semantics guide image restoration while restored visual cues reciprocally enhance saliency perception. Specifically, V2DNet first employs a hierarchical dual-branch initialization, in which a self-calibrated decoder predicts the saliency mask and a mask-aware restoration module reconstructs the image content. After that, a saliency-guided refinement module with cross-level modulation is used to improve the structural fidelity and semantic consistency. Extensive experiments show that V2DNet outperforms existing state-of-the-art methods in both quantitative and qualitative evaluations across multiple benchmarks.
+Underwater salient object detection (USOD) plays a vital role in marine vision tasks but remains fundamentally challenging due to severe visual degradation, such as selective absorption and medium scattering. Conventional pipelines typically adopt a sequential "enhance-then-detect" paradigm. However, isolating low-level visual restoration from high-level semantic perception often leads to semantic inconsistency, where the restored images may not be optimal for detection and can even introduce task-irrelevant noise. To break this sequential bottleneck, we propose UniV2D, a Unified Vision-to-Detection Network that jointly optimizes visual restoration and salient object detection within a mutually beneficial framework. Unlike traditional methods that rely on disjointed pipelines or rigid physical priors, UniV2D introduces a semantic-driven learning paradigm: high-level saliency semantics actively guide the restoration process, while the restored visual cues reciprocally enhance saliency perception. Specifically, UniV2D features a hierarchical dual-branch architecture. It first employs a self-calibrated decoder to predict initial saliency masks alongside a mask-aware restoration module to reconstruct image content. Subsequently, a saliency-guided refinement module equipped with cross-level modulation is utilized to align structural fidelity with semantic consistency. Extensive experiments across multiple benchmarks demonstrate that UniV2D significantly outperforms state-of-the-art methods in both quantitative and qualitative evaluations, establishing a new standard for joint underwater perception.
 
 <img width="1619" height="542" alt="image" src="https://github.com/user-attachments/assets/0ea26c0b-36d3-4708-a292-4233a57b7f61" />
 
@@ -34,9 +34,9 @@ bash scripts/test.sh
 ```
 
 ## 📖 Paper Info & Status
-> **Title**: From Visibility to Detection: Saliency-Guided Underwater Image Restoration with Hierarchical Dual-Branch Refinement  
-> **Authors**: Laibin Chang, Yunke Wang, Kui Jiang, Shaodong Wang, Bo Du  
-> **Status**: Under Review  
+> **Title**: UniV2D: Bridging Visual Restoration and Semantic Perception for Underwater Salient Object Detection
+> **Authors**: Laibin Chang, Yunke Wang, Xu Zhang, Kui Jiang, Chang Xu, and Bo Du
+> **Status**: Under Review
 > **Code**: The code will be released after the paper is accepted.
 
 ---
